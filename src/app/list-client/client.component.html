@@ -1,0 +1,80 @@
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-sm-10 mb-4">
+      <h4 class="custom-title font-weight-bold text-center mt-5">
+        Client Details
+      </h4>
+      <div class="table-responsive mt-4 mb-4" style="max-height: 600px; max-width: auto; overflow-y: auto;">
+        <table class="table table-striped table-hover table-bordered">
+          <thead class="thead-dark">
+            <tr>
+              <th>Account length</th>
+              <th>Area code</th>
+              <th>International plan</th>
+              <th>Voice mail plan</th>
+              <th>Number vmail messages</th>
+              <th>State</th>
+              <th>Total day calls</th>
+              <th>Total day charge</th>
+              <th>Total day minutes</th>
+              <th>Total eve calls</th>
+              <th>Total eve charge</th>
+              <th>Total eve minutes</th>
+              <th>Total night calls</th>
+              <th>Total night charge</th>
+              <th>Total night minutes</th>
+              <th>Total intl calls</th>
+              <th>Total intl charge</th>
+              <th>Total intl minutes</th>
+              <th>Customer service calls</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let client of listClients">
+              <td>{{ client.accountLength }}</td>
+              <td>{{ client.areaCode }}</td>
+              <td>{{ client.internationalPlan }}</td>
+              <td>{{ client.voiceMailPlan }}</td>
+              <td>{{ client.numberVmailMessages }}</td>
+              <td>{{ client.state }}</td>
+              <td>{{ client.totalDayCalls }}</td>
+              <td>{{ client.totalDayCharge }}</td>
+              <td>{{ client.totalDayMinutes }}</td>
+              <td>{{ client.totalEveCalls }}</td>
+              <td>{{ client.totalEveCharge }}</td>
+              <td>{{ client.totalEveMinutes }}</td>
+              <td>{{ client.totalNightCalls }}</td>
+              <td>{{ client.totalNightCharge }}</td>
+              <td>{{ client.totalNightMinutes }}</td>
+              <td>{{ client.totalIntlCalls }}</td>
+              <td>{{ client.totalIntlCharge }}</td>
+              <td>{{ client.totalIntlMinutes }}</td>
+              <td>{{ client.customerServiceCalls }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-sm-4"> <!-- Adjusted width -->
+      <h4 class="custom-title text-center ">
+        Churn & Prediction
+      </h4>
+      <div class="table-responsive mt-4 mb-4" style="max-height: 500px; overflow-y: auto;">
+        <table class="table table-striped table-hover table-bordered">
+          <thead class="thead-dark">
+            <tr>
+              <th style="width: 50%;">Churn</th> <!-- Width set to 50% -->
+              <th style="width: 50%;">Prediction</th> <!-- Width set to 50% -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let client of listClients">
+              <td>{{ client.churn }}</td>
+              <td>{{ client.prediction }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

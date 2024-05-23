@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+.custom-navbar {
+    background-color: #2471A3;
+    color: #154360;
+    font-size: 1.2rem;
+  }
+  
+  .custom-navbar .nav-link {
+    color: #154360;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  .custom-navbar .nav-link:hover {
+    color: white;
+  }
+  .table {
+    font-size: 0.9rem; /* Ajuster la taille de la police */
+  }
+  
+  .table thead th {
+    text-align: center; /* Centrer le texte dans les en-têtes */
+  }
+  
+  .table tbody td {
+    vertical-align: middle; /* Aligner verticalement le texte au centre */
+  }
+  
+  .table tbody tr:hover {
+    background-color: #f1f1f1; /* Changer la couleur de fond au survol */
+  }
+  
+ 
+  
